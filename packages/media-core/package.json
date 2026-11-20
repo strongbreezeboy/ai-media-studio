@@ -1,7 +1,8 @@
 {
   "name": "@ai-media-studio/media-core",
   "version": "0.1.0",
-  "description": "Core engine for browser-based audio and video processing",
+  "description": "A TypeScript core library for browser-based audio and video processing, featuring media metadata, task scheduling, concurrency control and resource management.",
+  "author": "Xin Mark",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -11,17 +12,39 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
+  "keywords": [
+    "media",
+    "media-processing",
+    "video",
+    "audio",
+    "browser",
+    "typescript",
+    "media-metadata",
+    "task-manager",
+    "task-scheduler",
+    "webcodecs",
+    "ai-media-studio"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
   }
 }
