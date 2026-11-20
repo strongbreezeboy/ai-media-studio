@@ -15,7 +15,7 @@ import {
   MediaTaskManager,
   type MediaMetadata,
   type MediaTask,
-} from '@ai-media-studio/media-core';
+} from '@xinmark/media-core';
 
 
 export default function Home() {

@@ -2,6 +2,9 @@
   "name": "@ai-media-studio/web",
   "version": "0.1.0",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +12,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@ai-media-studio/media-core": "workspace:*",
+    "@xinmark/media-core": "workspace:*",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"

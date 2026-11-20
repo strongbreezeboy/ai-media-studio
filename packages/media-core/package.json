@@ -1,8 +1,17 @@
 {
-  "name": "@ai-media-studio/media-core",
+  "name": "@xinmark/media-core",
   "version": "0.1.0",
   "description": "A TypeScript core library for browser-based audio and video processing, featuring media metadata, task scheduling, concurrency control and resource management.",
   "author": "Xin Mark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongbreezeboy/ai-media-studio.git",
+    "directory": "packages/media-core"
+  },
+  "homepage": "https://github.com/strongbreezeboy/ai-media-studio/tree/main/packages/media-core#readme",
+  "bugs": {
+    "url": "https://github.com/strongbreezeboy/ai-media-studio/issues"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",

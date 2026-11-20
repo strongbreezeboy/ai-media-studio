@@ -10,7 +10,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@ai-media-studio/media-core':
+      '@xinmark/media-core':
         specifier: workspace:*
         version: link:../../packages/media-core
       next:

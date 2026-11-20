@@ -6,6 +6,6 @@
   "scripts": {
     "dev": "pnpm --filter @ai-media-studio/web dev",
     "build": "pnpm --filter @ai-media-studio/web build",
-    "build:core": "pnpm --filter @ai-media-studio/media-core build"
+    "build:core": "pnpm --filter @xinmark/media-core build"
   }
 }

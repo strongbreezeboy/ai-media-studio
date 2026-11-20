@@ -1,9 +1,9 @@
 
-# @ai-media-studio/media-core
+# @xinmark/media-core
 
 **A lightweight TypeScript core library for browser-based media processing.**
 
-`@ai-media-studio/media-core` 是 AI Media Studio 的底层媒体基础库，提供媒体类型识别、音视频元数据读取，以及可靠的异步任务管理能力。
+`@xinmark/media-core` 是 AI Media Studio 的底层媒体基础库，提供媒体类型识别、音视频元数据读取，以及可靠的异步任务管理能力。
 
 它旨在为浏览器端音视频处理应用提供统一的基础能力，包括任务生命周期管理、并发控制、取消、超时和资源清理。
 
@@ -25,19 +25,19 @@
 使用 npm：
 
 ```bash
-npm install @ai-media-studio/media-core
+npm install @xinmark/media-core
 ```
 
 使用 pnpm：
 
 ```bash
-pnpm add @ai-media-studio/media-core
+pnpm add @xinmark/media-core
 ```
 
 使用 yarn：
 
 ```bash
-yarn add @ai-media-studio/media-core
+yarn add @xinmark/media-core
 ```
 
 ## Quick Start
@@ -48,7 +48,7 @@ import {
   getMediaFileInfo,
   readMediaMetadata,
   MediaTaskManager,
-} from '@ai-media-studio/media-core';
+} from '@xinmark/media-core';
 
 // 创建媒体任务管理器
 const manager = new MediaTaskManager({
@@ -121,7 +121,7 @@ input?.addEventListener('change', async () => {
 根据文件 MIME 类型识别媒体类别。
 
 ```ts
-import { getMediaKind } from '@ai-media-studio/media-core';
+import { getMediaKind } from '@xinmark/media-core';
 
 const kind = getMediaKind(file);
 ```
@@ -146,7 +146,7 @@ type MediaKind = 'video' | 'audio' | 'image' | 'unknown';
 获取媒体文件的基本信息。
 
 ```ts
-import { getMediaFileInfo } from '@ai-media-studio/media-core';
+import { getMediaFileInfo } from '@xinmark/media-core';
 
 const info = getMediaFileInfo(file);
 
@@ -169,7 +169,7 @@ interface MediaFileInfo {
 读取视频或音频文件的基础元数据。
 
 ```ts
-import { readMediaMetadata } from '@ai-media-studio/media-core';
+import { readMediaMetadata } from '@xinmark/media-core';
 
 const metadata = await readMediaMetadata(file, {
   timeout: 15000,
@@ -216,7 +216,7 @@ interface MediaMetadata {
 ### 1. 创建管理器
 
 ```ts
-import { MediaTaskManager } from '@ai-media-studio/media-core';
+import { MediaTaskManager } from '@xinmark/media-core';
 
 const manager = new MediaTaskManager({
   maxConcurrent: 2,
@@ -544,7 +544,7 @@ processing
 克隆项目：
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/strongbreezeboy/ai-media-studio.git
 cd ai-media-studio
 ```
 
@@ -557,13 +557,13 @@ pnpm install
 运行测试：
 
 ```bash
-pnpm --filter @ai-media-studio/media-core test
+pnpm --filter @xinmark/media-core test
 ```
 
 构建：
 
 ```bash
-pnpm --filter @ai-media-studio/media-core build
+pnpm --filter @xinmark/media-core build
 ```
 
 ## Project Status
