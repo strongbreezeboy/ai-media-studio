@@ -6,3 +6,6 @@ allowBuilds:
   esbuild: false
   sharp: false
   unrs-resolver: false
+
+minimumReleaseAgeExclude:
+  - '@xinmark/media-core@0.1.0'

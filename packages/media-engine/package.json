@@ -1,0 +1,61 @@
+{
+  "name": "@xinmark/media-engine",
+  "version": "0.1.0",
+  "description": "A TypeScript browser-based audio and video processing engine built on top of media-core.",
+  "author": "Xin Mark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongbreezeboy/ai-media-studio.git",
+    "directory": "packages/media-engine"
+  },
+  "homepage": "https://github.com/strongbreezeboy/ai-media-studio/tree/main/packages/media-engine#readme",
+  "bugs": {
+    "url": "https://github.com/strongbreezeboy/ai-media-studio/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "media",
+    "media-engine",
+    "video-processing",
+    "audio-processing",
+    "browser",
+    "typescript",
+    "webcodecs",
+    "mediabunny",
+    "ai-media-studio"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@xinmark/media-core": "^0.1.0",
+    "mediabunny": "1.66.2"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  }
+}
